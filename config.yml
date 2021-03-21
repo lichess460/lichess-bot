@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # lichess base URL
 
 engine:                      # engine settings
   dir: "./"                  # dir containing engines, relative to this project
-  name: "stockfishmodern"        # binary name of the engine to use
+  name: "./stockfishmodern"        # binary name of the engine to use
   protocol: "uci"            # "uci" or "xboard"
   uci_ponder: true           # think on opponent time; only works if "protocol" is "uci"
   polyglot:
@@ -38,7 +38,7 @@ engine:                      # engine settings
 #     gaviota: "Gaviota path"
 #     nalimov: "Nalimov Path"
 #     scorpio: "Scorpio Path"
-#     syzygy: "Syzygy Path"
+      syzygy: "3-4-5piecesSyzygy"
   silence_stderr: false       # some engines (yes you, leela) are very noisy
 
 abort_time: 30                # time to abort a game in seconds when there is no activity
