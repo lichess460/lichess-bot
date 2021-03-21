@@ -26,6 +26,7 @@ engine:                      # engine settings
     Move Overhead: 100        # increase if your bot flags games too often
     Threads: 7                # max CPU threads the engine can use
     Hash: 400                 # max memory (in megabytes) the engine can allocate
+    SyzygyPath: "3-4-5piecesSyzygy"  # path to syzygy tablebases
 #   Clear Hash: true          # Clear the hash table
 #   go_commands:              # additional options to pass to the UCI go command
 #     nodes: 1                # Search so many nodes only.
@@ -38,7 +39,6 @@ engine:                      # engine settings
 #     gaviota: "Gaviota path"
 #     nalimov: "Nalimov Path"
 #     scorpio: "Scorpio Path"
-      syzygy: "3-4-5piecesSyzygy"
   silence_stderr: false       # some engines (yes you, leela) are very noisy
 
 abort_time: 30                # time to abort a game in seconds when there is no activity
